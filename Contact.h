@@ -12,6 +12,7 @@ contact* ajoutNoeud(contact* tete,char nom[],char phone[]);
 contact* depiler(contact* tete);
 contact* supprimer(contact* tete,char nom[]);
 contact* getContact(contact* tete,char nom[]);
+void tri(contact** tete);
 void down(contact* tete,FILE* flux);
 void afficher(contact* tete);
 void libereListe(contact* tete);
