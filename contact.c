@@ -91,6 +91,19 @@ contact* getContact(contact* tete,char nom[]) {
     }
     return NULL;
 }
+
+//mettre les contact dans un fichier .txt
+void down(contact* tete,FILE *flux) {
+    if (tete==NULL) {
+        fprintf(flux,"Liste vide");
+        return;
+    }
+    contact* tmp=tete;
+    while (tmp!=NULL) {
+        fprintf(flux,"||Nom :%s==Contact: %s||\n",tmp->name,tmp->tel);
+        tmp=tmp->suivant;
+    }
+}
 //affichage des contacts
 void afficher(contact* tete) {
     if (tete==NULL) {
