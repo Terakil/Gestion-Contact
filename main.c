@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "Contact.h"
-
+#include "Tri.h"
 int main() {
+
     FILE *flux = fopen("liste.txt","w");
     if (flux == NULL) {
         printf("Le fichier n'a pas pu etre ouvert");
