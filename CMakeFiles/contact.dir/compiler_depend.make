@@ -12,6 +12,8 @@ CMakeFiles/contact.dir/main.c.o: main.c \
   /usr/include/stdc-predef.h \
   /usr/include/stdio.h \
   /usr/include/stdlib.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
   /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
   /usr/include/x86_64-linux-gnu/bits/byteswap.h \
   /usr/include/x86_64-linux-gnu/bits/endian.h \
@@ -36,11 +38,13 @@ CMakeFiles/contact.dir/main.c.o: main.c \
   /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
@@ -252,23 +256,17 @@ src/Tri.c:
 
 src/Search.c:
 
-/usr/lib/x86_64-linux-gnu/libc.so:
+src/Contact.c:
 
-/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
+/usr/lib/gcc/x86_64-unknown-linux-gnu/15.2.0/include/stddef.h:
 
-/usr/include/strings.h:
+/usr/lib/gcc/x86_64-unknown-linux-gnu/15.2.0/include/stdarg.h:
 
-/usr/include/alloca.h:
+CMakeFiles/contact.dir/src/Contact.c.o:
 
-/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
+/usr/include/x86_64-linux-gnu/sys/types.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
-
-/usr/lib/x86_64-linux-gnu/crtn.o:
-
-/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
-
-/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
@@ -280,13 +278,13 @@ src/Search.c:
 
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
-
-/usr/include/endian.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
+
+/usr/include/x86_64-linux-gnu/bits/types.h:
+
+/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
 
 head/Search.h:
 
@@ -298,6 +296,18 @@ head/Search.h:
 
 head/Tri.h:
 
+/usr/lib/x86_64-linux-gnu/crtn.o:
+
+/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
+
+/usr/include/endian.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
+
+/usr/include/alloca.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
+
 /usr/include/features-time64.h:
 
 /usr/lib/gcc/x86_64-unknown-linux-gnu/15.2.0/crtbeginS.o:
@@ -308,19 +318,11 @@ head/Tri.h:
 
 /usr/include/stdlib.h:
 
+/usr/lib/x86_64-linux-gnu/libc.so:
+
+/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
+
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
-
-/usr/lib/x86_64-linux-gnu/libgcc_s.so.1:
-
-/usr/include/string.h:
-
-/usr/include/x86_64-linux-gnu/bits/endian.h:
-
-head/Contact.h:
-
-/usr/include/x86_64-linux-gnu/bits/types.h:
-
-/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
@@ -344,15 +346,15 @@ main.c:
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
-src/Contact.c:
+/usr/include/strings.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
+/usr/lib/x86_64-linux-gnu/libgcc_s.so.1:
 
-/usr/include/stdio.h:
+/usr/include/x86_64-linux-gnu/bits/endian.h:
 
-/usr/lib/gcc/x86_64-unknown-linux-gnu/15.2.0/libgcc.a:
+head/Contact.h:
 
-/usr/include/x86_64-linux-gnu/bits/timesize.h:
+/usr/include/string.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
@@ -360,15 +362,21 @@ src/Contact.c:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
+/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/15.2.0/libgcc.a:
+
+/usr/include/x86_64-linux-gnu/bits/timesize.h:
+
+/usr/include/stdio.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
+
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
-
-/usr/lib/gcc/x86_64-unknown-linux-gnu/15.2.0/include/stddef.h:
-
-/usr/lib/gcc/x86_64-unknown-linux-gnu/15.2.0/include/stdarg.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
@@ -385,10 +393,6 @@ src/Contact.c:
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
-
-CMakeFiles/contact.dir/src/Contact.c.o:
-
-/usr/include/x86_64-linux-gnu/sys/types.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
