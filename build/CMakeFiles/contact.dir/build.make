@@ -72,19 +72,19 @@ include CMakeFiles/contact.dir/flags.make
 CMakeFiles/contact.dir/codegen:
 .PHONY : CMakeFiles/contact.dir/codegen
 
-CMakeFiles/contact.dir/main.c.o: CMakeFiles/contact.dir/flags.make
-CMakeFiles/contact.dir/main.c.o: /home/terakil/Documents/Gestion-Contact/main.c
-CMakeFiles/contact.dir/main.c.o: CMakeFiles/contact.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/terakil/Documents/Gestion-Contact/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/contact.dir/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/contact.dir/main.c.o -MF CMakeFiles/contact.dir/main.c.o.d -o CMakeFiles/contact.dir/main.c.o -c /home/terakil/Documents/Gestion-Contact/main.c
+CMakeFiles/contact.dir/src/main.c.o: CMakeFiles/contact.dir/flags.make
+CMakeFiles/contact.dir/src/main.c.o: /home/terakil/Documents/Gestion-Contact/src/main.c
+CMakeFiles/contact.dir/src/main.c.o: CMakeFiles/contact.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/terakil/Documents/Gestion-Contact/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/contact.dir/src/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/contact.dir/src/main.c.o -MF CMakeFiles/contact.dir/src/main.c.o.d -o CMakeFiles/contact.dir/src/main.c.o -c /home/terakil/Documents/Gestion-Contact/src/main.c
 
-CMakeFiles/contact.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/contact.dir/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/terakil/Documents/Gestion-Contact/main.c > CMakeFiles/contact.dir/main.c.i
+CMakeFiles/contact.dir/src/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/contact.dir/src/main.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/terakil/Documents/Gestion-Contact/src/main.c > CMakeFiles/contact.dir/src/main.c.i
 
-CMakeFiles/contact.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/contact.dir/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/terakil/Documents/Gestion-Contact/main.c -o CMakeFiles/contact.dir/main.c.s
+CMakeFiles/contact.dir/src/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/contact.dir/src/main.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/terakil/Documents/Gestion-Contact/src/main.c -o CMakeFiles/contact.dir/src/main.c.s
 
 CMakeFiles/contact.dir/src/Contact.c.o: CMakeFiles/contact.dir/flags.make
 CMakeFiles/contact.dir/src/Contact.c.o: /home/terakil/Documents/Gestion-Contact/src/Contact.c
@@ -130,7 +130,7 @@ CMakeFiles/contact.dir/src/Search.c.s: cmake_force
 
 # Object files for target contact
 contact_OBJECTS = \
-"CMakeFiles/contact.dir/main.c.o" \
+"CMakeFiles/contact.dir/src/main.c.o" \
 "CMakeFiles/contact.dir/src/Contact.c.o" \
 "CMakeFiles/contact.dir/src/Tri.c.o" \
 "CMakeFiles/contact.dir/src/Search.c.o"
@@ -138,7 +138,7 @@ contact_OBJECTS = \
 # External object files for target contact
 contact_EXTERNAL_OBJECTS =
 
-contact: CMakeFiles/contact.dir/main.c.o
+contact: CMakeFiles/contact.dir/src/main.c.o
 contact: CMakeFiles/contact.dir/src/Contact.c.o
 contact: CMakeFiles/contact.dir/src/Tri.c.o
 contact: CMakeFiles/contact.dir/src/Search.c.o

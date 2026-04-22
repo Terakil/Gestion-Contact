@@ -136,30 +136,6 @@ contact/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/contact.dir/build.make CMakeFiles/contact.dir/build
 .PHONY : contact/fast
 
-main.o: main.c.o
-.PHONY : main.o
-
-# target to build an object file
-main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/contact.dir/build.make CMakeFiles/contact.dir/main.c.o
-.PHONY : main.c.o
-
-main.i: main.c.i
-.PHONY : main.i
-
-# target to preprocess a source file
-main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/contact.dir/build.make CMakeFiles/contact.dir/main.c.i
-.PHONY : main.c.i
-
-main.s: main.c.s
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/contact.dir/build.make CMakeFiles/contact.dir/main.c.s
-.PHONY : main.c.s
-
 src/Contact.o: src/Contact.c.o
 .PHONY : src/Contact.o
 
@@ -232,6 +208,30 @@ src/Tri.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/contact.dir/build.make CMakeFiles/contact.dir/src/Tri.c.s
 .PHONY : src/Tri.c.s
 
+src/main.o: src/main.c.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/contact.dir/build.make CMakeFiles/contact.dir/src/main.c.o
+.PHONY : src/main.c.o
+
+src/main.i: src/main.c.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/contact.dir/build.make CMakeFiles/contact.dir/src/main.c.i
+.PHONY : src/main.c.i
+
+src/main.s: src/main.c.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/contact.dir/build.make CMakeFiles/contact.dir/src/main.c.s
+.PHONY : src/main.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -242,9 +242,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... contact"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
 	@echo "... src/Contact.o"
 	@echo "... src/Contact.i"
 	@echo "... src/Contact.s"
@@ -254,6 +251,9 @@ help:
 	@echo "... src/Tri.o"
 	@echo "... src/Tri.i"
 	@echo "... src/Tri.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

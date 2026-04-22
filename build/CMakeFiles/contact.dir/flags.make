@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = 
+C_INCLUDES = -I/home/terakil/Documents/Gestion-Contact/include
 
 C_FLAGS = -std=gnu11
 
