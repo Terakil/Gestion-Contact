@@ -4,8 +4,7 @@ project(contact C)
 set(CMAKE_C_STANDARD 11)
 
 add_executable(contact main.c
-        Contact.h
-        contact.c
-        Tri.h
-        Tri.c
+        src/Contact.c
+        src/Tri.c
+        src/Search.c
 )

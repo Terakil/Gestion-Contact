@@ -86,50 +86,66 @@ CMakeFiles/contact.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/contact.dir/main.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/terakil/Documents/project/Gestion-Contact/main.c -o CMakeFiles/contact.dir/main.c.s
 
-CMakeFiles/contact.dir/contact.c.o: CMakeFiles/contact.dir/flags.make
-CMakeFiles/contact.dir/contact.c.o: contact.c
-CMakeFiles/contact.dir/contact.c.o: CMakeFiles/contact.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/terakil/Documents/project/Gestion-Contact/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/contact.dir/contact.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/contact.dir/contact.c.o -MF CMakeFiles/contact.dir/contact.c.o.d -o CMakeFiles/contact.dir/contact.c.o -c /home/terakil/Documents/project/Gestion-Contact/contact.c
+CMakeFiles/contact.dir/src/Contact.c.o: CMakeFiles/contact.dir/flags.make
+CMakeFiles/contact.dir/src/Contact.c.o: src/Contact.c
+CMakeFiles/contact.dir/src/Contact.c.o: CMakeFiles/contact.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/terakil/Documents/project/Gestion-Contact/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/contact.dir/src/Contact.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/contact.dir/src/Contact.c.o -MF CMakeFiles/contact.dir/src/Contact.c.o.d -o CMakeFiles/contact.dir/src/Contact.c.o -c /home/terakil/Documents/project/Gestion-Contact/src/Contact.c
 
-CMakeFiles/contact.dir/contact.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/contact.dir/contact.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/terakil/Documents/project/Gestion-Contact/contact.c > CMakeFiles/contact.dir/contact.c.i
+CMakeFiles/contact.dir/src/Contact.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/contact.dir/src/Contact.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/terakil/Documents/project/Gestion-Contact/src/Contact.c > CMakeFiles/contact.dir/src/Contact.c.i
 
-CMakeFiles/contact.dir/contact.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/contact.dir/contact.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/terakil/Documents/project/Gestion-Contact/contact.c -o CMakeFiles/contact.dir/contact.c.s
+CMakeFiles/contact.dir/src/Contact.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/contact.dir/src/Contact.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/terakil/Documents/project/Gestion-Contact/src/Contact.c -o CMakeFiles/contact.dir/src/Contact.c.s
 
-CMakeFiles/contact.dir/Tri.c.o: CMakeFiles/contact.dir/flags.make
-CMakeFiles/contact.dir/Tri.c.o: Tri.c
-CMakeFiles/contact.dir/Tri.c.o: CMakeFiles/contact.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/terakil/Documents/project/Gestion-Contact/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/contact.dir/Tri.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/contact.dir/Tri.c.o -MF CMakeFiles/contact.dir/Tri.c.o.d -o CMakeFiles/contact.dir/Tri.c.o -c /home/terakil/Documents/project/Gestion-Contact/Tri.c
+CMakeFiles/contact.dir/src/Tri.c.o: CMakeFiles/contact.dir/flags.make
+CMakeFiles/contact.dir/src/Tri.c.o: src/Tri.c
+CMakeFiles/contact.dir/src/Tri.c.o: CMakeFiles/contact.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/terakil/Documents/project/Gestion-Contact/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/contact.dir/src/Tri.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/contact.dir/src/Tri.c.o -MF CMakeFiles/contact.dir/src/Tri.c.o.d -o CMakeFiles/contact.dir/src/Tri.c.o -c /home/terakil/Documents/project/Gestion-Contact/src/Tri.c
 
-CMakeFiles/contact.dir/Tri.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/contact.dir/Tri.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/terakil/Documents/project/Gestion-Contact/Tri.c > CMakeFiles/contact.dir/Tri.c.i
+CMakeFiles/contact.dir/src/Tri.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/contact.dir/src/Tri.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/terakil/Documents/project/Gestion-Contact/src/Tri.c > CMakeFiles/contact.dir/src/Tri.c.i
 
-CMakeFiles/contact.dir/Tri.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/contact.dir/Tri.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/terakil/Documents/project/Gestion-Contact/Tri.c -o CMakeFiles/contact.dir/Tri.c.s
+CMakeFiles/contact.dir/src/Tri.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/contact.dir/src/Tri.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/terakil/Documents/project/Gestion-Contact/src/Tri.c -o CMakeFiles/contact.dir/src/Tri.c.s
+
+CMakeFiles/contact.dir/src/Search.c.o: CMakeFiles/contact.dir/flags.make
+CMakeFiles/contact.dir/src/Search.c.o: src/Search.c
+CMakeFiles/contact.dir/src/Search.c.o: CMakeFiles/contact.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/terakil/Documents/project/Gestion-Contact/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/contact.dir/src/Search.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/contact.dir/src/Search.c.o -MF CMakeFiles/contact.dir/src/Search.c.o.d -o CMakeFiles/contact.dir/src/Search.c.o -c /home/terakil/Documents/project/Gestion-Contact/src/Search.c
+
+CMakeFiles/contact.dir/src/Search.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/contact.dir/src/Search.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/terakil/Documents/project/Gestion-Contact/src/Search.c > CMakeFiles/contact.dir/src/Search.c.i
+
+CMakeFiles/contact.dir/src/Search.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/contact.dir/src/Search.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/terakil/Documents/project/Gestion-Contact/src/Search.c -o CMakeFiles/contact.dir/src/Search.c.s
 
 # Object files for target contact
 contact_OBJECTS = \
 "CMakeFiles/contact.dir/main.c.o" \
-"CMakeFiles/contact.dir/contact.c.o" \
-"CMakeFiles/contact.dir/Tri.c.o"
+"CMakeFiles/contact.dir/src/Contact.c.o" \
+"CMakeFiles/contact.dir/src/Tri.c.o" \
+"CMakeFiles/contact.dir/src/Search.c.o"
 
 # External object files for target contact
 contact_EXTERNAL_OBJECTS =
 
 contact: CMakeFiles/contact.dir/main.c.o
-contact: CMakeFiles/contact.dir/contact.c.o
-contact: CMakeFiles/contact.dir/Tri.c.o
+contact: CMakeFiles/contact.dir/src/Contact.c.o
+contact: CMakeFiles/contact.dir/src/Tri.c.o
+contact: CMakeFiles/contact.dir/src/Search.c.o
 contact: CMakeFiles/contact.dir/build.make
 contact: CMakeFiles/contact.dir/compiler_depend.ts
 contact: CMakeFiles/contact.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/terakil/Documents/project/Gestion-Contact/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable contact"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/terakil/Documents/project/Gestion-Contact/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable contact"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/contact.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

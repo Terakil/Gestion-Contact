@@ -8,9 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/terakil/Documents/project/Gestion-Contact/Tri.c" "CMakeFiles/contact.dir/Tri.c.o" "gcc" "CMakeFiles/contact.dir/Tri.c.o.d"
-  "/home/terakil/Documents/project/Gestion-Contact/contact.c" "CMakeFiles/contact.dir/contact.c.o" "gcc" "CMakeFiles/contact.dir/contact.c.o.d"
   "/home/terakil/Documents/project/Gestion-Contact/main.c" "CMakeFiles/contact.dir/main.c.o" "gcc" "CMakeFiles/contact.dir/main.c.o.d"
+  "/home/terakil/Documents/project/Gestion-Contact/src/Contact.c" "CMakeFiles/contact.dir/src/Contact.c.o" "gcc" "CMakeFiles/contact.dir/src/Contact.c.o.d"
+  "/home/terakil/Documents/project/Gestion-Contact/src/Search.c" "CMakeFiles/contact.dir/src/Search.c.o" "gcc" "CMakeFiles/contact.dir/src/Search.c.o.d"
+  "/home/terakil/Documents/project/Gestion-Contact/src/Tri.c" "CMakeFiles/contact.dir/src/Tri.c.o" "gcc" "CMakeFiles/contact.dir/src/Tri.c.o.d"
   "" "contact" "gcc" "CMakeFiles/contact.dir/link.d"
   )
 

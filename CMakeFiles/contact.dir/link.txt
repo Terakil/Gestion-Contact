@@ -1,1 +1,1 @@
-/usr/bin/cc -Wl,--dependency-file=CMakeFiles/contact.dir/link.d CMakeFiles/contact.dir/main.c.o CMakeFiles/contact.dir/contact.c.o CMakeFiles/contact.dir/Tri.c.o -o contact
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/contact.dir/link.d CMakeFiles/contact.dir/main.c.o CMakeFiles/contact.dir/src/Contact.c.o CMakeFiles/contact.dir/src/Tri.c.o CMakeFiles/contact.dir/src/Search.c.o -o contact

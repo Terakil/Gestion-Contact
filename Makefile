@@ -136,54 +136,6 @@ contact/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/contact.dir/build.make CMakeFiles/contact.dir/build
 .PHONY : contact/fast
 
-Tri.o: Tri.c.o
-.PHONY : Tri.o
-
-# target to build an object file
-Tri.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/contact.dir/build.make CMakeFiles/contact.dir/Tri.c.o
-.PHONY : Tri.c.o
-
-Tri.i: Tri.c.i
-.PHONY : Tri.i
-
-# target to preprocess a source file
-Tri.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/contact.dir/build.make CMakeFiles/contact.dir/Tri.c.i
-.PHONY : Tri.c.i
-
-Tri.s: Tri.c.s
-.PHONY : Tri.s
-
-# target to generate assembly for a file
-Tri.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/contact.dir/build.make CMakeFiles/contact.dir/Tri.c.s
-.PHONY : Tri.c.s
-
-contact.o: contact.c.o
-.PHONY : contact.o
-
-# target to build an object file
-contact.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/contact.dir/build.make CMakeFiles/contact.dir/contact.c.o
-.PHONY : contact.c.o
-
-contact.i: contact.c.i
-.PHONY : contact.i
-
-# target to preprocess a source file
-contact.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/contact.dir/build.make CMakeFiles/contact.dir/contact.c.i
-.PHONY : contact.c.i
-
-contact.s: contact.c.s
-.PHONY : contact.s
-
-# target to generate assembly for a file
-contact.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/contact.dir/build.make CMakeFiles/contact.dir/contact.c.s
-.PHONY : contact.c.s
-
 main.o: main.c.o
 .PHONY : main.o
 
@@ -208,6 +160,78 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/contact.dir/build.make CMakeFiles/contact.dir/main.c.s
 .PHONY : main.c.s
 
+src/Contact.o: src/Contact.c.o
+.PHONY : src/Contact.o
+
+# target to build an object file
+src/Contact.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/contact.dir/build.make CMakeFiles/contact.dir/src/Contact.c.o
+.PHONY : src/Contact.c.o
+
+src/Contact.i: src/Contact.c.i
+.PHONY : src/Contact.i
+
+# target to preprocess a source file
+src/Contact.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/contact.dir/build.make CMakeFiles/contact.dir/src/Contact.c.i
+.PHONY : src/Contact.c.i
+
+src/Contact.s: src/Contact.c.s
+.PHONY : src/Contact.s
+
+# target to generate assembly for a file
+src/Contact.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/contact.dir/build.make CMakeFiles/contact.dir/src/Contact.c.s
+.PHONY : src/Contact.c.s
+
+src/Search.o: src/Search.c.o
+.PHONY : src/Search.o
+
+# target to build an object file
+src/Search.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/contact.dir/build.make CMakeFiles/contact.dir/src/Search.c.o
+.PHONY : src/Search.c.o
+
+src/Search.i: src/Search.c.i
+.PHONY : src/Search.i
+
+# target to preprocess a source file
+src/Search.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/contact.dir/build.make CMakeFiles/contact.dir/src/Search.c.i
+.PHONY : src/Search.c.i
+
+src/Search.s: src/Search.c.s
+.PHONY : src/Search.s
+
+# target to generate assembly for a file
+src/Search.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/contact.dir/build.make CMakeFiles/contact.dir/src/Search.c.s
+.PHONY : src/Search.c.s
+
+src/Tri.o: src/Tri.c.o
+.PHONY : src/Tri.o
+
+# target to build an object file
+src/Tri.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/contact.dir/build.make CMakeFiles/contact.dir/src/Tri.c.o
+.PHONY : src/Tri.c.o
+
+src/Tri.i: src/Tri.c.i
+.PHONY : src/Tri.i
+
+# target to preprocess a source file
+src/Tri.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/contact.dir/build.make CMakeFiles/contact.dir/src/Tri.c.i
+.PHONY : src/Tri.c.i
+
+src/Tri.s: src/Tri.c.s
+.PHONY : src/Tri.s
+
+# target to generate assembly for a file
+src/Tri.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/contact.dir/build.make CMakeFiles/contact.dir/src/Tri.c.s
+.PHONY : src/Tri.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -218,15 +242,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... contact"
-	@echo "... Tri.o"
-	@echo "... Tri.i"
-	@echo "... Tri.s"
-	@echo "... contact.o"
-	@echo "... contact.i"
-	@echo "... contact.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/Contact.o"
+	@echo "... src/Contact.i"
+	@echo "... src/Contact.s"
+	@echo "... src/Search.o"
+	@echo "... src/Search.i"
+	@echo "... src/Search.s"
+	@echo "... src/Tri.o"
+	@echo "... src/Tri.i"
+	@echo "... src/Tri.s"
 .PHONY : help
 
 

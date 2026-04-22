@@ -1,11 +1,13 @@
 file(REMOVE_RECURSE
   "CMakeFiles/contact.dir/link.d"
-  "CMakeFiles/contact.dir/Tri.c.o"
-  "CMakeFiles/contact.dir/Tri.c.o.d"
-  "CMakeFiles/contact.dir/contact.c.o"
-  "CMakeFiles/contact.dir/contact.c.o.d"
   "CMakeFiles/contact.dir/main.c.o"
   "CMakeFiles/contact.dir/main.c.o.d"
+  "CMakeFiles/contact.dir/src/Contact.c.o"
+  "CMakeFiles/contact.dir/src/Contact.c.o.d"
+  "CMakeFiles/contact.dir/src/Search.c.o"
+  "CMakeFiles/contact.dir/src/Search.c.o.d"
+  "CMakeFiles/contact.dir/src/Tri.c.o"
+  "CMakeFiles/contact.dir/src/Tri.c.o.d"
   "contact"
   "contact.pdb"
 )

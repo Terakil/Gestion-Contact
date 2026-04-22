@@ -1,15 +1,15 @@
 #include <stdlib.h>
 #include <string.h>
-#include "Contact.h"
+#include "../head/Contact.h"
 
 /*--------------------------------------------------------------------------------
                                     ALGO DE TRI
  --------------------------------------------------------------------------------*/
 
 //Division de la liste en 2
-void divList(contact* tete,contact** a,contact** b){
-    contact* lent=tete;
-    contact* rapide=tete->suivant;
+void divList(noeud* tete,noeud** a,noeud** b){
+    noeud* lent=tete;
+    noeud* rapide=tete->suivant;
 
     while (rapide!=NULL) {
         rapide=rapide->suivant;
@@ -24,12 +24,12 @@ void divList(contact* tete,contact** a,contact** b){
 }
 
 //fusion trié
-contact* fuse(contact*a ,contact* b) {
+noeud* fuse(noeud*a ,noeud* b) {
     if (a == NULL)return b;
     if (b == NULL)return a;
 
-    contact* resultat=NULL;
-    if (strcmp(a->name,b->name)<=0) {
+    noeud* resultat=NULL;
+    if (strcmp(a->data.name,b->data.name)<=0) {
         resultat=a;
         resultat->suivant=fuse(a->suivant,b);
     }else {
@@ -41,13 +41,13 @@ contact* fuse(contact*a ,contact* b) {
 
 //Tri en entier
 
-void tri(contact** tete) {
-    contact* tmp=*tete;
+void tri(noeud** tete) {
+    noeud* tmp=*tete;
 
     if (tmp==NULL || tmp->suivant==NULL)
         return;
-    contact* a;
-    contact* b;
+    noeud* a;
+    noeud* b;
 
     divList(*tete,&a,&b);
 

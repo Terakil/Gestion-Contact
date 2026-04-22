@@ -4,16 +4,19 @@
 typedef struct Contact{
     char name[50];
     char tel[20];
-    struct Contact* suivant;
 }contact;
+typedef struct Noeud{
+    contact data;
+    struct Noeud* suivant;
+}noeud;
 
 //Prototype
-contact* creerNoeud(char name[],char tel[]);
-contact* ajoutNoeud(contact* tete,char nom[],char phone[]);
-contact* depiler(contact* tete);
-contact* supprimer(contact* tete,char nom[]);
-contact* getContact(contact* tete,char nom[]);
-void down(contact* tete,FILE* flux);
-void afficher(contact* tete);
-void libereListe(contact* tete);
+noeud* creerNoeud(char name[],char tel[]);
+noeud* ajoutNoeud(noeud* tete,char nom[],char phone[]);
+noeud* depiler(noeud* tete);
+noeud* supprimer(noeud* tete,char nom[]);
+noeud* getContact(noeud* tete,char nom[]);
+void down(noeud* tete,FILE* flux);
+void afficher(noeud* tete);
+void libereListe(noeud  * tete);
 #endif //CONTACT_CONTACT_H

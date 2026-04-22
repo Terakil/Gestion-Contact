@@ -1,22 +1,22 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "Contact.h"
-//Creation contact
-contact* creerNoeud(char name[],char tel[]) {
-    contact* nouveauNoeud = (contact*)malloc(sizeof(contact));
+#include "../head/Contact.h"
+//Creation noeud
+noeud* creerNoeud(char name[],char tel[]) {
+    noeud* nouveauNoeud = (noeud*)malloc(sizeof(noeud));
     if (!nouveauNoeud) {
         printf("Erreur d'allocation!!");
         exit(1);
     }
-    strcpy(nouveauNoeud->name,name);
-    strcpy(nouveauNoeud->tel,tel);
+    strcpy(nouveauNoeud->data.name,name);
+    strcpy(nouveauNoeud->data.tel,tel);
     nouveauNoeud->suivant=NULL;
     return nouveauNoeud;
 }
 //liberation de la liste
-void libereListe(contact* tete) {
-    contact* tmp=tete;
+void libereListe(noeud* tete) {
+    noeud* tmp=tete;
     while (tmp!=NULL) {
         tete=tete->suivant;
         free(tmp);
@@ -24,23 +24,23 @@ void libereListe(contact* tete) {
     }
     tete=NULL;
 }
-//Ajout liste contact
-contact* ajoutNoeud(contact* tete,char nom[],char phone[]) {
-    contact *nouveauNoeud = creerNoeud(nom, phone);
+//Ajout liste noeud
+noeud* ajoutNoeud(noeud* tete,char nom[],char phone[]) {
+    noeud *nouveauNoeud = creerNoeud(nom, phone);
     nouveauNoeud->suivant=tete;
     return nouveauNoeud;
 }
 
 
 //Enlever tete de liste
-contact* depiler(contact* tete) {
+noeud* depiler(noeud* tete) {
     if (tete==NULL) {
         printf("Liste vide");
         exit (1);
     }
     char* nom=malloc(50*sizeof(char));
-    contact* tmp = tete;
-    strcpy(nom,tmp->name);
+    noeud* tmp = tete;
+    strcpy(nom,tmp->data.name);
     tete=tete->suivant;
     printf("%s a ete depiler\n",nom);
     free(nom);
@@ -50,22 +50,22 @@ contact* depiler(contact* tete) {
 
 /**
  *
- * @param {contact}tete
+ * @param {noeud}tete
  * @param {char}nom
- * @return {contact}
+ * @return {noeud}
  */
 
-//supprimer contact
-contact* supprimer(contact* tete,char nom[]) {
-    if (strcmp(tete->name,nom)==0) {
+//supprimer noeud
+noeud* supprimer(noeud* tete,char nom[]) {
+    if (strcmp(tete->data.name,nom)==0) {
         return depiler(tete);
     }
-    contact* prec=tete;
-    contact* tmp=tete->suivant;
+    noeud* prec=tete;
+    noeud* tmp=tete->suivant;
     char *tab=malloc(50*sizeof(char));
     while(tmp!=NULL) {
-        if (strcmp(nom,tmp->name)==0) {
-            strcpy(tab,tmp->name);
+        if (strcmp(nom,tmp->data.name)==0) {
+            strcpy(tab,tmp->data.name);
             prec->suivant=tmp->suivant;
             printf("%s a ete supprimer de la liste\n",tab);
             free(tmp);
@@ -76,15 +76,15 @@ contact* supprimer(contact* tete,char nom[]) {
     }
     return tete;
 }
-//avoir contact
-contact* getContact(contact* tete,char nom[]) {
+//avoir noeud
+noeud* getContact(noeud* tete,char nom[]) {
     if (tete==NULL) {
         printf("Liste Vide");
         return NULL;
     }
-    contact* tmp=tete;
+    noeud* tmp=tete;
     while (tmp!=NULL) {
-        if (strcmp(tmp->name, nom) == 0) {
+        if (strcmp(tmp->data.name, nom) == 0) {
             return tmp;
         }
         tmp=tmp->suivant;
@@ -92,27 +92,27 @@ contact* getContact(contact* tete,char nom[]) {
     return NULL;
 }
 
-//mettre les contact dans un fichier .txt
-void down(contact* tete,FILE *flux) {
+//mettre les contacts dans un fichier .txt
+void down(noeud* tete,FILE *flux) {
     if (tete==NULL) {
         fprintf(flux,"Liste vide");
         return;
     }
-    contact* tmp=tete;
+    noeud* tmp=tete;
     while (tmp!=NULL) {
-        fprintf(flux,"||Nom :%s==Contact: %s||\n",tmp->name,tmp->tel);
+        fprintf(flux,"||Nom :%25s==Contact: %15s||\n",tmp->data.name,tmp->data.tel);
         tmp=tmp->suivant;
     }
 }
 //affichage des contacts
-void afficher(contact* tete) {
+void afficher(noeud* tete) {
     if (tete==NULL) {
         printf("Liste vide");
         return;
     }
-    contact* tmp=tete;
+    noeud* tmp=tete;
     while (tmp!=NULL) {
-        printf("||Nom :%s==Contact: %s||\n",tmp->name,tmp->tel);
+        printf("||Nom :%25s == Contact: %14s||\n",tmp->data.name,tmp->data.tel);
         tmp=tmp->suivant;
     }
 }

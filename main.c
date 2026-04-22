@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "Contact.h"
-#include "Tri.h"
+#include "head/Contact.h"
+#include "head/Tri.h"
+#include "head/Search.h"
 int main() {
 
     FILE *flux = fopen("liste.txt","w");
@@ -9,7 +10,7 @@ int main() {
         printf("Le fichier n'a pas pu etre ouvert");
         return 1;
     }
-    contact* tete = NULL;
+    noeud* tete = NULL;
     char nom[50]="Ter";
     char contact[20]="+2611212121";
     tete=ajoutNoeud(tete,nom,contact);
@@ -19,6 +20,8 @@ int main() {
     tete=ajoutNoeud(tete,"Tsikiniaina","+23464564645444");
     tri(&tete);
     afficher(tete);
+    printf("\nRecherche du contact 'Rakoto':\n");
+    afficherContact(recherche(tete,"Rakoto"));
     down(tete,flux);
     fclose(flux);
     libereListe(tete);
