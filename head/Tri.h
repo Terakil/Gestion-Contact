@@ -5,6 +5,7 @@
 #ifndef CONTACT_TRI_H
 #define CONTACT_TRI_H
 
-#include "Tri.h"
+#include "Contact.h"
+
 void tri(contact** tete);
 #endif //CONTACT_TRI_H

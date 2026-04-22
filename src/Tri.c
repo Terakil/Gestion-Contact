@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <string.h>
-#include "contact.h"
+#include "Contact.h"
 
 /*--------------------------------------------------------------------------------
                                     ALGO DE TRI

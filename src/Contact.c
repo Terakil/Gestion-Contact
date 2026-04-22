@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "contact.h"
+#include "Contact.h"
 //Creation contact
 contact* creerNoeud(char name[],char tel[]) {
     contact* nouveauNoeud = (contact*)malloc(sizeof(contact));
