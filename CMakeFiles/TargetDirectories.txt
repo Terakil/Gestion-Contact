@@ -1,3 +1,0 @@
-/home/terakil/Documents/project/Gestion-Contact/CMakeFiles/contact.dir
-/home/terakil/Documents/project/Gestion-Contact/CMakeFiles/edit_cache.dir
-/home/terakil/Documents/project/Gestion-Contact/CMakeFiles/rebuild_cache.dir

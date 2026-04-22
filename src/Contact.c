@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "../head/Contact.h"
+#include "../include/Contact.h"
 //Creation noeud
 noeud* creerNoeud(char name[],char tel[]) {
     noeud* nouveauNoeud = (noeud*)malloc(sizeof(noeud));

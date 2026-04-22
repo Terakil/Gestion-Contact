@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-#include "../head/Search.h"
+#include "../include/Search.h"
 
 noeud* recherche(noeud* tete, char *nom) {
     if (tete == NULL) {

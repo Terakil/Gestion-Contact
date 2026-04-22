@@ -3,8 +3,11 @@ project(contact C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(contact main.c
-        src/Contact.c
-        src/Tri.c
-        src/Search.c
+add_executable(contact
+    src/main.c
+    src/Contact.c
+    src/Tri.c
+    src/Search.c
 )
+
+target_include_directories(contact PRIVATE include)

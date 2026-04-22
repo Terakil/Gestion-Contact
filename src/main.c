@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "head/Contact.h"
-#include "head/Tri.h"
-#include "head/Search.h"
+#include "../include/Contact.h"
+#include "../include/Tri.h"
+#include "../include/Search.h"
 int main() {
 
     FILE *flux = fopen("liste.txt","w");
