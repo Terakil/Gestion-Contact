@@ -7,5 +7,5 @@
 
 #include "Contact.h"
 
-void tri(noeud** tete);
+int tri(noeud** tete);
 #endif //CONTACT_TRI_H

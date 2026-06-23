@@ -2,8 +2,6 @@
 #define CONTACT_SEARCH_H
 
 #include "Contact.h"
-#include <stdio.h>
-#include <string.h>
 
 noeud* recherche(noeud* tete, char *nom);
 void afficherContact(noeud* contact);

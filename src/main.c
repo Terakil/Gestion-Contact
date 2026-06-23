@@ -3,6 +3,7 @@
 #include "../include/Contact.h"
 #include "../include/Tri.h"
 #include "../include/Search.h"
+#include "../include/Interface.h"
 int main() {
 
     FILE *flux = fopen("liste.txt","w");
@@ -11,6 +12,7 @@ int main() {
         return 1;
     }
     noeud* tete = NULL;
+    init();
     char nom[50]="Ter";
     char contact[20]="+2611212121";
     tete=ajoutNoeud(tete,nom,contact);

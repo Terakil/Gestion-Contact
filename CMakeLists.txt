@@ -8,6 +8,9 @@ add_executable(contact
     src/Contact.c
     src/Tri.c
     src/Search.c
+    src/Interface.c
+        include/Interface.h
+        src/Interface.c
 )
 
 target_include_directories(contact PRIVATE include)
