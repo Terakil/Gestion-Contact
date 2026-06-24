@@ -12,14 +12,7 @@ int main() {
         return 1;
     }
     noeud* tete = NULL;
-    init();
-    char nom[50]="Ter";
-    char contact[20]="+2611212121";
-    tete=ajoutNoeud(tete,nom,contact);
-    tete=ajoutNoeud(tete,"You",contact);
-    tete=ajoutNoeud(tete,"Rakoto","+23464564645444");
-    tete=ajoutNoeud(tete,"Aro","+23464564645444");
-    tete=ajoutNoeud(tete,"Tsikiniaina","+23464564645444");
+    init(&tete);
     tri(&tete);
     afficher(tete);
     printf("\nRecherche du contact 'Rakoto':\n");

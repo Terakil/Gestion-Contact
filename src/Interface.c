@@ -1,47 +1,46 @@
 #include<stdio.h>
 #include <stdlib.h>
-#include<../include/Interface.h>
+#include "../include/Interface.h"
+#include "../include/Contact.h"
 
-#include "Contact.h"
-
-void init(noeud *tete) {
-    int choice;
+int init(noeud **tete) {
+    int select;
     printf("====================================================================\n");
     printf("                        CONTACT GESTION                             \n");
     printf("====================================================================\n");
 
     printf("                        Action à faire                              \n");
-    printf("1.Add      2.Remove     3.Show Contact      4.Down as .txt");
-    scanf("%d",&choice);
-    switch (choice) {
+    printf("1.Add      2.Remove     3.Show Contact      4.Down as .txt\n");
+    if ((scanf("%d",&select))!=1) {
+        printf("invalide");
+        return 1;
+    };
+    switch (select) {
         case 1:
             add(tete);
             break;
         case 2:
             removeContact(tete);
+            break;
         default:
             exit(1);
     }
-
-
-
+    return 0;
 }
-
-int add(struct Noeud *tete) {
-    char *nom;
-    char *num;
-    printf("Entrer le nom a ajouter");
-    if (scanf("%s",&nom)!=1)
-        return EXIT_FAILURE;
-    printf("Entrer le numero");
-    if (scanf("%s",&num)!=1)
-        return EXIT_FAILURE;
-    ajoutNoeud(tete,nom,num);
+    noeud* add(struct Noeud **tete) {
+        char *nom=malloc(50*sizeof(char));
+        char *num=malloc(50*sizeof(char));
+        printf("Entrer le nom a ajouter\n");
+        scanf("%s",nom);
+        printf("Entrer le numero\n");
+        scanf("%s",num);
+        *tete=ajoutNoeud(*tete,nom,num);
+        return *tete;
 }
-int removeContact(noeud *tete) {
-    char *nom;
+void removeContact(noeud **tete) {
+    char *nom=malloc(50*sizeof(char));
     printf("Entrer le nom du contact a supprimer");
-    if (scanf("%s",&nom)!=1)
-        return EXIT_FAILURE;
-    supprimer(tete,nom);
+    scanf("%s",nom);
+    supprimer(*tete,nom);
+    printf("Success");
 }

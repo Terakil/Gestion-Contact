@@ -5,8 +5,8 @@
 #ifndef CONTACT_INTERFACE_H
 #define CONTACT_INTERFACE_H
 #include "Contact.h"
-    void init();
-    int add(struct Noeud *tete);
-    int removeContact(noeud *tete);
+    int init(noeud **tete);
+    noeud* add(struct Noeud **tete);
+    void removeContact(noeud **tete);
 
 #endif //CONTACT_INTERFACE_H
